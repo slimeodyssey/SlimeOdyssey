@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slime Odyssey - Hatch, Collect, Battle</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Game Configuration -->
+  <!-- <script src="config.js"></script> -->
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="assets/slimeodyssey-icon.png" class="logo-icon-img" alt="Slime Odyssey">
+        <span class="logo-text">Slime Odyssey</span>
+      </div>
+      <div class="nav-links">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#slimes" class="nav-link">Slimes</a>
+        <a href="#boss-gallery" class="nav-link">Enemies</a>
+        <a href="#hatchery" class="nav-link">Hatchery</a>
+        <a href="#about" class="nav-link">About</a>
+      </div>
+      <button class="btn btn-primary btn-play">Play Now</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Slime Odyssey</h1>
+      <p class="hero-subtitle">Hatch eggs, collect powerful slimes, and battle through the realms</p>
+      <div class="hero-cta">
+        <button class="btn btn-primary btn-large">Play Now</button>
+        <button class="btn btn-secondary btn-large">Learn More</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-value">10+</div>
+          <div class="stat-label">Unique Slimes</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">50+</div>
+          <div class="stat-label">Unique Abilities</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">6</div>
+          <div class="stat-label">Rarities</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="floating-slime slime-1">
+        <div class="slime-css slime-flame-drake level-5">
+          <div class="css-slime-container">
+            <div class="css-slime">
+              <div class="body"></div>
+              <div class="eye"></div>
+              <div class="antenna"></div>
+              <div class="antenna"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="floating-slime slime-2">
+        <div class="slime-css slime-green-wyrmling level-5">
+          <div class="css-slime-container">
+            <div class="css-slime">
+              <div class="body"></div>
+              <div class="eye"></div>
+              <div class="antenna"></div>
+              <div class="antenna"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="floating-slime slime-3">
+        <div class="slime-css slime-thunder-drake level-5">
+          <div class="css-slime-container">
+            <div class="css-slime">
+              <div class="body"></div>
+              <div class="eye"></div>
+              <div class="antenna"></div>
+              <div class="antenna"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="floating-slime slime-4">
+        <div class="slime-css slime-frost-raptor level-5">
+          <div class="css-slime-container">
+            <div class="css-slime">
+              <div class="body"></div>
+              <div class="eye"></div>
+              <div class="antenna"></div>
+              <div class="antenna"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-divider section-divider-bottom">
+      <svg class="editorial"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           viewBox="0 24 150 28 "
+           preserveAspectRatio="none">
+        <defs>
+          <path id="gentle-wave"
+                d="M-160 44c30 0 
+                   58-18 88-18s
+                   58 18 88 18 
+                   58-18 88-18 
+                   58 18 88 18
+                   v44h-352z" />
+        </defs>
+        <g class="parallax1">
+          <use xlink:href="#gentle-wave" x="50" y="3"/>
+        </g>
+        <g class="parallax2">
+          <use xlink:href="#gentle-wave" x="50" y="0"/>
+        </g>
+        <g class="parallax3">
+          <use xlink:href="#gentle-wave" x="50" y="9"/>
+        </g>
+        <g class="parallax4">
+          <use xlink:href="#gentle-wave" x="50" y="6"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="section-divider section-divider-top">
+      <svg class="editorial"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           viewBox="0 24 150 28 "
+           preserveAspectRatio="none">
+        <defs>
+          <path id="gentle-wave"
+                d="M-160 44c30 0 
+                   58-18 88-18s
+                   58 18 88 18 
+                   58-18 88-18 
+                   58 18 88 18
+                   v44h-352z" />
+        </defs>
+        <g class="parallax1">
+          <use xlink:href="#gentle-wave" x="50" y="3"/>
+        </g>
+        <g class="parallax2">
+          <use xlink:href="#gentle-wave" x="50" y="0"/>
+        </g>
+        <g class="parallax3">
+          <use xlink:href="#gentle-wave" x="50" y="9"/>
+        </g>
+        <g class="parallax4">
+          <use xlink:href="#gentle-wave" x="50" y="6"/>
+        </g>
+      </svg>
+    </div>
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Game Features</h2>
+        <p class="section-subtitle">Discover the depths of Slime Odyssey</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🥚</div>
+          <h3 class="feature-title">Hatch Eggs</h3>
+          <p class="feature-description">Discover rare and powerful slimes by hatching eggs from the Hatchery. Each egg holds infinite possibilities.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚔️</div>
+          <h3 class="feature-title">Epic Battles</h3>
+          <p class="feature-description">Battle through 10 unique realms, defeat challenging bosses, and prove your worth as a slime master.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🏆</div>
+          <h3 class="feature-title">Collect & Evolve</h3>
+          <p class="feature-description">Build your collection of slimes across 6 rarity tiers. Train them, equip gear, and watch them grow stronger.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👥</div>
+          <h3 class="feature-title">Join Clans</h3>
+          <p class="feature-description">Team up with other players, tackle clan bosses together, and climb the leaderboards as a united force.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🗺️</div>
+          <h3 class="feature-title">Epic Journey</h3>
+          <p class="feature-description">Embark on challenging journeys through mysterious lands, facing increasingly powerful enemies.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💎</div>
+          <h3 class="feature-title">Loot & Gear</h3>
+          <p class="feature-description">Collect powerful gear from treasure chests and battles. Equip your slimes to unlock their true potential.</p>
+        </div>
+      </div>
+    </div>
+    <div class="section-divider section-divider-bottom">
+      <svg class="editorial"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           viewBox="0 24 150 28 "
+           preserveAspectRatio="none">
+        <defs>
+          <path id="gentle-wave"
+                d="M-160 44c30 0 
+                   58-18 88-18s
+                   58 18 88 18 
+                   58-18 88-18 
+                   58 18 88 18
+                   v44h-352z" />
+        </defs>
+        <g class="parallax1">
+          <use xlink:href="#gentle-wave" x="50" y="3"/>
+        </g>
+        <g class="parallax2">
+          <use xlink:href="#gentle-wave" x="50" y="0"/>
+        </g>
+        <g class="parallax3">
+          <use xlink:href="#gentle-wave" x="50" y="9"/>
+        </g>
+        <g class="parallax4">
+          <use xlink:href="#gentle-wave" x="50" y="6"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Slime Showcase Section -->
+  <section id="slimes" class="slime-showcase">
+    <div class="section-divider section-divider-top">
+      <svg class="editorial"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           viewBox="0 24 150 28 "
+           preserveAspectRatio="none">
+        <defs>
+          <path id="gentle-wave"
+                d="M-160 44c30 0 
+                   58-18 88-18s
+                   58 18 88 18 
+                   58-18 88-18 
+                   58 18 88 18
+                   v44h-352z" />
+        </defs>
+        <g class="parallax1">
+          <use xlink:href="#gentle-wave" x="50" y="3"/>
+        </g>
+        <g class="parallax2">
+          <use xlink:href="#gentle-wave" x="50" y="0"/>
+        </g>
+        <g class="parallax3">
+          <use xlink:href="#gentle-wave" x="50" y="9"/>
+        </g>
+        <g class="parallax4">
+          <use xlink:href="#gentle-wave" x="50" y="6"/>
+        </g>
+      </svg>
+    </div>
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Slime Collection</h2>
+        <p class="section-subtitle">Discover and collect slimes across all rarities</p>
+      </div>
+      <div class="rarity-tiers">
+        <div class="rarity-tier common">
+          <div class="rarity-badge">Common</div>
+          <div class="rarity-slimes" id="common-slimes"></div>
+        </div>
+        <div class="rarity-tier uncommon">
+          <div class="rarity-badge">Uncommon</div>
+          <div class="rarity-slimes" id="uncommon-slimes"></div>
+        </div>
+        <div class="rarity-tier rare">
+          <div class="rarity-badge">Rare</div>
+          <div class="rarity-slimes" id="rare-slimes"></div>
+        </div>
+        <div class="rarity-tier epic">
+          <div class="rarity-badge">Epic</div>
+          <div class="rarity-slimes" id="epic-slimes"></div>
+        </div>
+        <div class="rarity-tier legendary">
+          <div class="rarity-badge">Legendary</div>
+          <div class="rarity-slimes" id="legendary-slimes"></div>
+        </div>
+        <div class="rarity-tier mythic">
+          <div class="rarity-badge">Mythic</div>
+          <div class="rarity-slimes" id="mythic-slimes"></div>
+        </div>
+      </div>
+    </div>
+    <div class="section-divider section-divider-bottom">
+      <svg class="editorial"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           viewBox="0 24 150 28 "
+           preserveAspectRatio="none">
+        <defs>
+          <path id="gentle-wave"
+                d="M-160 44c30 0 
+                   58-18 88-18s
+                   58 18 88 18 
+                   58-18 88-18 
+                   58 18 88 18
+                   v44h-352z" />
+        </defs>
+        <g class="parallax1">
+          <use xlink:href="#gentle-wave" x="50" y="3"/>
+        </g>
+        <g class="parallax2">
+          <use xlink:href="#gentle-wave" x="50" y="0"/>
+        </g>
+        <g class="parallax3">
+          <use xlink:href="#gentle-wave" x="50" y="9"/>
+        </g>
+        <g class="parallax4">
+          <use xlink:href="#gentle-wave" x="50" y="6"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Boss Gallery Section -->
+  <section id="boss-gallery" class="boss-gallery">
+    <div class="section-divider section-divider-top">
+      <svg class="editorial"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           viewBox="0 24 150 28 "
+           preserveAspectRatio="none">
+        <defs>
+          <path id="gentle-wave"
+                d="M-160 44c30 0 
+                   58-18 88-18s
+                   58 18 88 18 
+                   58-18 88-18 
+                   58 18 88 18
+                   v44h-352z" />
+        </defs>
+        <g class="parallax1">
+          <use xlink:href="#gentle-wave" x="50" y="3"/>
+        </g>
+        <g class="parallax2">
+          <use xlink:href="#gentle-wave" x="50" y="0"/>
+        </g>
+        <g class="parallax3">
+          <use xlink:href="#gentle-wave" x="50" y="9"/>
+        </g>
+        <g class="parallax4">
+          <use xlink:href="#gentle-wave" x="50" y="6"/>
+        </g>
+      </svg>
+    </div>
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Enemy Gallery</h2>
+        <p class="section-subtitle">Face dangerous creatures across the realms</p>
+      </div>
+      <div class="enemy-belt-container">
+        <div class="enemy-grid" id="enemy-belt"></div>
+      </div>
+    </div>
+    <div class="section-divider section-divider-bottom">
+      <svg class="editorial"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           viewBox="0 24 150 28 "
+           preserveAspectRatio="none">
+        <defs>
+          <path id="gentle-wave"
+                d="M-160 44c30 0 
+                   58-18 88-18s
+                   58 18 88 18 
+                   58-18 88-18 
+                   58 18 88 18
+                   v44h-352z" />
+        </defs>
+        <g class="parallax1">
+          <use xlink:href="#gentle-wave" x="50" y="3"/>
+        </g>
+        <g class="parallax2">
+          <use xlink:href="#gentle-wave" x="50" y="0"/>
+        </g>
+        <g class="parallax3">
+          <use xlink:href="#gentle-wave" x="50" y="9"/>
+        </g>
+        <g class="parallax4">
+          <use xlink:href="#gentle-wave" x="50" y="6"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Interactive Hatchery Section -->
+  <section id="hatchery" class="hatchery-section" style="background: url('assets/hatchery-screen.png') center center / cover no-repeat !important; background-color: transparent !important;">
+    <div class="section-divider section-divider-top">
+      <svg class="editorial"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           viewBox="0 24 150 28 "
+           preserveAspectRatio="none">
+        <defs>
+          <path id="gentle-wave"
+                d="M-160 44c30 0 
+                   58-18 88-18s
+                   58 18 88 18 
+                   58-18 88-18 
+                   58 18 88 18
+                   v44h-352z" />
+        </defs>
+        <g class="parallax1">
+          <use xlink:href="#gentle-wave" x="50" y="3"/>
+        </g>
+        <g class="parallax2">
+          <use xlink:href="#gentle-wave" x="50" y="0"/>
+        </g>
+        <g class="parallax3">
+          <use xlink:href="#gentle-wave" x="50" y="9"/>
+        </g>
+        <g class="parallax4">
+          <use xlink:href="#gentle-wave" x="50" y="6"/>
+        </g>
+      </svg>
+    </div>
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Try the Hatchery</h2>
+        <p class="section-subtitle">Experience the thrill of hatching eggs with real game probabilities</p>
+      </div>
+      <div class="hatchery-container">
+        <div class="egg-selection">
+          <h3 class="hatchery-subtitle">Tap an Egg to Hatch</h3>
+          <div class="egg-cards">
+            <div class="egg-card-marketing common" data-egg="basic" onclick="hatchEggDirect('basic')">
+              <img src="basic-egg.png" class="egg-img" alt="Basic Egg">
+              <h4 class="egg-name">Basic Egg</h4>
+              <p class="egg-probability">60% Common, 40% Uncommon</p>
+            </div>
+            <div class="egg-card-marketing legendary" data-egg="prime" onclick="hatchEggDirect('prime')">
+              <img src="prime-egg.png" class="egg-img" alt="Prime Egg">
+              <h4 class="egg-name">Prime Egg</h4>
+              <p class="egg-probability">55% Rare, 35% Epic, 10% Legendary</p>
+            </div>
+            <div class="egg-card-marketing epic" data-egg="forbidden" onclick="hatchEggDirect('forbidden')">
+              <img src="forbidden-egg.png" class="egg-img" alt="Forbidden Egg">
+              <h4 class="egg-name">Forbidden Egg</h4>
+              <p class="egg-probability">30% Epic, 40% Legendary, 30% Mythic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-divider section-divider-bottom section-divider-green">
+      <svg class="editorial"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           viewBox="0 24 150 28 "
+           preserveAspectRatio="none">
+        <defs>
+          <path id="gentle-wave"
+                d="M-160 44c30 0 
+                   58-18 88-18s
+                   58 18 88 18 
+                   58-18 88-18 
+                   58 18 88 18
+                   v44h-352z" />
+        </defs>
+        <g class="parallax1">
+          <use xlink:href="#gentle-wave" x="50" y="3"/>
+        </g>
+        <g class="parallax2">
+          <use xlink:href="#gentle-wave" x="50" y="0"/>
+        </g>
+        <g class="parallax3">
+          <use xlink:href="#gentle-wave" x="50" y="9"/>
+        </g>
+        <g class="parallax4">
+          <use xlink:href="#gentle-wave" x="50" y="6"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Full-screen Hatch Overlay -->
+  <div id="hatch-overlay" class="hatch-overlay">
+    <div class="hatch-overlay-content">
+      <div id="overlay-hatch-visual" class="overlay-hatch-visual"></div>
+      <button id="close-hatch-overlay" class="btn btn-secondary close-overlay-btn">Close</button>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="section-container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2 class="section-title">About Slime Odyssey</h2>
+          <p class="about-description">
+            Slime Odyssey is a collectible RPG where you hatch, collect, and battle with unique slimes across 
+            multiple realms. Build your dream team, tackle challenging bosses, join clans with friends, 
+            and become the ultimate slime master.
+          </p>
+          <p class="about-description">
+            With over 10 unique slimes to collect and much more to come, 6 rarity tiers from Common to Mythic, and endless 
+            strategic possibilities, every battle tells a new story.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">✓</span>
+              <span>Free to play</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">✓</span>
+              <span>Regular updates</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">✓</span>
+              <span>Active community</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">✓</span>
+              <span>Cross-platform</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-card">
+            <div class="about-card-icon">
+              <img src="assets/slimeodyssey-icon.png" alt="Slime Odyssey Icon" class="about-icon-img">
+            </div>
+            <div class="about-card-title">Start Your Journey</div>
+            <div class="about-card-text">Begin your adventure in the Slime Realm</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="cta-content">
+      <h2 class="cta-title">Ready to Begin Your Odyssey?</h2>
+      <p class="cta-subtitle">Join thousands of players in the ultimate slime collecting adventure</p>
+      <button class="btn btn-primary btn-large btn-cta">Play Now</button>
+      <div class="cta-social">
+        <span class="cta-social-text">Follow us for updates:</span>
+        <div class="social-links">
+          <a href="https://discord.gg/jspnGBx42r" class="social-link" aria-label="Discord">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@slime.odyssey" class="social-link" aria-label="TikTok">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/odyssey_slime" class="social-link" aria-label="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/slimeodyssey-icon.png" class="logo-icon-img" alt="Slime Odyssey">
+            <span class="logo-text">Slime Odyssey</span>
+          </div>
+          <p class="footer-tagline">Hatch, Evolve, Battle!</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-link-group">
+            <h4 class="footer-link-title">Game</h4>
+            <a href="#features" class="footer-link">Features</a>
+            <a href="#slimes" class="footer-link">Slimes</a>
+            <a href="#about" class="footer-link">About</a>
+          </div>
+          <div class="footer-link-group">
+            <h4 class="footer-link-title">Community</h4>
+            <a href="https://discord.gg/jspnGBx42r" class="footer-link">Discord</a>
+            <a href="https://www.tiktok.com/@slime.odyssey" class="footer-link">TikTok</a>
+            <a href="https://www.instagram.com/odyssey_slime" class="footer-link">Instagram</a>
+          </div>
+          <div class="footer-link-group">
+            <h4 class="footer-link-title">Legal</h4>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+            <a href="#" class="footer-link">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 Slime Odyssey. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Audio System using Web Audio API
+    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+    function playClickSound() {
+      if (audioContext.state === 'suspended') {
+        audioContext.resume();
+      }
+      const oscillator = audioContext.createOscillator();
+      const gainNode = audioContext.createGain();
+      
+      oscillator.connect(gainNode);
+      gainNode.connect(audioContext.destination);
+      
+      oscillator.frequency.setValueAtTime(AUDIO_CONFIG.CLICK_START_FREQ, audioContext.currentTime);
+      oscillator.frequency.exponentialRampToValueAtTime(AUDIO_CONFIG.CLICK_END_FREQ, audioContext.currentTime + AUDIO_CONFIG.CLICK_DURATION);
+      
+      gainNode.gain.setValueAtTime(AUDIO_CONFIG.CLICK_GAIN, audioContext.currentTime);
+      gainNode.gain.exponentialRampToValueAtTime(AUDIO_CONFIG.CLICK_GAIN_END, audioContext.currentTime + AUDIO_CONFIG.CLICK_DURATION);
+      
+      oscillator.start(audioContext.currentTime);
+      oscillator.stop(audioContext.currentTime + AUDIO_CONFIG.CLICK_DURATION);
+    }
+
+    function playHatchSound() {
+      if (audioContext.state === 'suspended') {
+        audioContext.resume();
+      }
+      
+      // Crackling sound
+      const crackOsc = audioContext.createOscillator();
+      const crackGain = audioContext.createGain();
+      crackOsc.connect(crackGain);
+      crackGain.connect(audioContext.destination);
+      
+      crackOsc.type = 'sawtooth';
+      crackOsc.frequency.setValueAtTime(AUDIO_CONFIG.CRACK_START_FREQ, audioContext.currentTime);
+      crackOsc.frequency.exponentialRampToValueAtTime(AUDIO_CONFIG.CRACK_END_FREQ, audioContext.currentTime + AUDIO_CONFIG.CRACK_DURATION);
+      
+      crackGain.gain.setValueAtTime(AUDIO_CONFIG.CRACK_GAIN, audioContext.currentTime);
+      crackGain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + AUDIO_CONFIG.CRACK_DURATION);
+      
+      crackOsc.start(audioContext.currentTime);
+      crackOsc.stop(audioContext.currentTime + AUDIO_CONFIG.CRACK_DURATION);
+      
+      // Chime sound after crack
+      setTimeout(() => {
+        const chimeOsc = audioContext.createOscillator();
+        const chimeGain = audioContext.createGain();
+        chimeOsc.connect(chimeGain);
+        chimeGain.connect(audioContext.destination);
+        
+        chimeOsc.type = 'sine';
+        chimeOsc.frequency.setValueAtTime(AUDIO_CONFIG.CHIME_C5_FREQ, audioContext.currentTime); // C5
+        chimeOsc.frequency.setValueAtTime(AUDIO_CONFIG.CHIME_E5_FREQ, audioContext.currentTime + AUDIO_CONFIG.CHIME_NOTE_DELAY_E5); // E5
+        chimeOsc.frequency.setValueAtTime(AUDIO_CONFIG.CHIME_G5_FREQ, audioContext.currentTime + AUDIO_CONFIG.CHIME_NOTE_DELAY_G5); // G5
+        
+        chimeGain.gain.setValueAtTime(AUDIO_CONFIG.CHIME_GAIN, audioContext.currentTime);
+        chimeGain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + AUDIO_CONFIG.CHIME_DURATION);
+        
+        chimeOsc.start(audioContext.currentTime);
+        chimeOsc.stop(audioContext.currentTime + AUDIO_CONFIG.CHIME_DURATION);
+      }, AUDIO_CONFIG.HATCH_CHIME_DELAY * 1000);
+    }
+
+    // CSS Blob Generator (from game.js)
+    function getSlimeSVG(cssClass, level) {
+      return `
+        <div class="slime-css ${cssClass} level-${level}">
+          <div class="css-slime-container">
+            <div class="css-slime">
+              <div class="body"></div>
+              <div class="eye"></div>
+              <div class="antenna"></div>
+              <div class="antenna"></div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Play button click handler (placeholder)
+    document.querySelectorAll('.btn-play, .btn-cta').forEach(btn => {
+      btn.addEventListener('click', () => {
+        alert('Game link coming soon! Check back later.');
+      });
+    });
+
+    // Floating animation for hero slimes
+    const floatingSlimes = document.querySelectorAll('.floating-slime');
+    floatingSlimes.forEach((slime, index) => {
+      const delay = index * 0.5;
+      slime.style.animationDelay = `${delay}s`;
+    });
+
+    // Populate Slime Showcase
+    function populateSlimeShowcase() {
+      const SLIME_POOL = {
+        Common: [
+          { name: "Flame Drake", cssClass: "slime-flame-drake", basePower: 100, element: "Fire" },
+          { name: "Green Wyrmling", cssClass: "slime-green-wyrmling", basePower: 90, element: "Earth" }
+        ],
+        Uncommon: [
+          { name: "Ember Lizard", cssClass: "slime-ember-lizard", basePower: 210, element: "Fire" },
+          { name: "Aqua Serpent", cssClass: "slime-aqua-serpent", basePower: 230, element: "Water" }
+        ],
+        Rare: [
+          { name: "Thunder Drake", cssClass: "slime-thunder-drake", basePower: 450, element: "Wind" },
+          { name: "Frost Raptor", cssClass: "slime-frost-raptor", basePower: 420, element: "Water" }
+        ],
+        Epic: [
+          { name: "Shadow Stalker", cssClass: "slime-shadow-stalker", basePower: 950, element: "Dark" },
+          { name: "Solar Phoenix", cssClass: "slime-solar-phoenix", basePower: 1100, element: "Fire" }
+        ],
+        Legendary: [
+          { name: "Golden Wyrm", cssClass: "slime-golden-wyrm", basePower: 3400, element: "Light" },
+          { name: "Void Terror", cssClass: "slime-void-terror", basePower: 3800, element: "Dark" }
+        ],
+        Mythic: [
+          { name: "Cosmic Singularity", cssClass: "slime-cosmic-singularity", basePower: 9500, element: "Dark" },
+          { name: "Chrono Emperor", cssClass: "slime-chrono-emperor", basePower: 12000, element: "Light" }
+        ]
+      };
+
+      Object.keys(SLIME_POOL).forEach(rarity => {
+        const container = document.getElementById(`${rarity.toLowerCase()}-slimes`);
+        console.log(`Looking for container: ${rarity.toLowerCase()}-slimes`, container);
+        if (container) {
+          SLIME_POOL[rarity].forEach(slime => {
+            const slimeCard = document.createElement('div');
+            slimeCard.className = 'slime-preview';
+            
+            // Create slime visual using getSlimeSVG function
+            const slimeVisual = document.createElement('div');
+            slimeVisual.className = 'slime-visual-container';
+            const slimeHTML = getSlimeSVG(slime.cssClass, 1);
+            console.log(`Generated slime HTML for ${slime.name}:`, slimeHTML);
+            slimeVisual.innerHTML = slimeHTML;
+            
+            const slimeName = document.createElement('div');
+            slimeName.className = 'slime-name';
+            slimeName.textContent = slime.name;
+            
+            slimeCard.appendChild(slimeVisual);
+            slimeCard.appendChild(slimeName);
+            container.appendChild(slimeCard);
+          });
+        } else {
+          console.warn(`Container not found: ${rarity.toLowerCase()}-slimes`);
+        }
+      });
+    }
+
+    // Enemy slime pool for battles (from game.js)
+    const ENEMY_POOL = [
+      { id: "mutant_mole", name: "Mutant Mole", basePower: 50, element: "Normal" },
+      { id: "plague_rat", name: "Plague Rat", basePower: 80, element: "Nature" },
+      { id: "toad_giant", name: "Giant Toad", basePower: 120, element: "Earth" },
+      { id: "poison_frog", name: "Poison Frog", basePower: 180, element: "Water" },
+      { id: "salamander_fire", name: "Fire Salamander", basePower: 250, element: "Air" },
+      { id: "newt_venom", name: "Venom Newt", basePower: 350, element: "Normal" },
+      { id: "squirrel_demon", name: "Squirrel Demon", basePower: 400, element: "Fire" },
+      { id: "giant_rat", name: "Giant Rat", basePower: 550, element: "Fire" },
+      { id: "axolotl_cursed", name: "Cursed Axolotl", basePower: 700, element: "Fire" },
+      { id: "caecian_horror", name: "Caecian Horror", basePower: 900, element: "Fire" },
+      { id: "wolf_alpha", name: "Alpha Wolf", basePower: 1350, element: "Normal" },
+      { id: "lion_pride", name: "Pride Lion", basePower: 1450, element: "Normal" },
+      { id: "hyena_maneater", name: "Maneater Hyena", basePower: 2300, element: "Normal" },
+      { id: "raptor_fierce", name: "Fierce Raptor", basePower: 2800, element: "Nature" },
+      { id: "trex_beast", name: "T-Rex Beast", basePower: 3500, element: "Earth" },
+      { id: "cobra_venom", name: "Venom Cobra", basePower: 4200, element: "Water" },
+      { id: "chameleon_deadly", name: "Deadly Chameleon", basePower: 5000, element: "Air" },
+      { id: "turtle_golem", name: "Turtle Golem", basePower: 5800, element: "Earth" },
+      { id: "dragon_fire", name: "Fire Dragon", basePower: 6800, element: "Fire" },
+      { id: "dragon_ice", name: "Ice Dragon", basePower: 7500, element: "Water" },
+      { id: "dragon_nature", name: "Nature Dragon", basePower: 8200, element: "Nature" },
+      { id: "dragon_thunder", name: "Thunder Dragon", basePower: 9000, element: "Air" },
+      { id: "dragon_shadow", name: "Shadow Dragon", basePower: 10000, element: "Dark" }
+    ];
+
+    // Populate Boss Gallery
+    function populateBossGallery() {
+      console.log('populateBossGallery called');
+      
+      // Mapping from opponent IDs to actual asset file names
+      const assetMapping = {
+        'wolf_alpha': 'alpha_wolf_static.png',
+        'caecian_horror': 'caecian_horror_static.png',
+        'axolotl_cursed': 'cursed_axolotl_static.png',
+        'chameleon_deadly': 'deadly_chameleon_static.png',
+        'raptor_fierce': 'fierce_raptor_static.png',
+        'dragon_fire': 'fire_dragon_static.png',
+        'salamander_fire': 'fire_salamander_static.png',
+        'giant_rat': 'giant_rat_static.png',
+        'toad_giant': 'giant_toad_static.png',
+        'dragon_ice': 'ice_dragon_static.png',
+        'hyena_maneater': 'maneater_hyena_static.png',
+        'mutant_mole': 'mutant_mole_static.png',
+        'dragon_nature': 'nature_dragon_static.png',
+        'plague_rat': 'plague_rat_static.png',
+        'frog_poison': 'poison_frog_static.png',
+        'lion_pride': 'pride_lion_static.png',
+        'dragon_shadow': 'shadow_dragon_static.png',
+        'squirrel_demon': 'squirrel_demon_sprite.png',
+        'trex_beast': 't_rex_beast_static.png',
+        'dragon_thunder': 'thunder_dragon_static.png',
+        'turtle_golem': 'turtle_golem_static.png',
+        'cobra_venom': 'venom_cobra_static.png',
+        'newt_venom': 'venom_newt_static.png'
+      };
+
+      // Populate single enemy belt with all enemies
+      const enemyBelt = document.getElementById('enemy-belt');
+      console.log('enemy-belt element:', enemyBelt);
+      
+      if (enemyBelt) {
+        console.log('ENEMY_POOL:', ENEMY_POOL);
+        console.log('ENEMY_POOL length:', ENEMY_POOL.length);
+        
+        // Duplicate all enemies 3 times for smooth infinite scroll
+        const duplicatedEnemies = [...ENEMY_POOL, ...ENEMY_POOL, ...ENEMY_POOL];
+        console.log('duplicatedEnemies length:', duplicatedEnemies.length);
+        
+        duplicatedEnemies.forEach((opponent, index) => {
+          console.log(`Creating enemy card ${index} for ${opponent.name}`);
+          
+          const card = document.createElement('div');
+          card.className = 'enemy-card';
+          
+          const visualDiv = document.createElement('div');
+          visualDiv.className = 'enemy-visual';
+          
+          const img = document.createElement('img');
+          // Use mapped asset name or fallback to ID-based name
+          const assetName = assetMapping[opponent.id] || `${opponent.id}_static.png`;
+          const imgPath = `assets/${assetName}`;
+          console.log(`Loading image: ${imgPath}`);
+          img.src = imgPath;
+          img.className = 'enemy-img';
+          img.alt = opponent.name;
+          
+          img.onload = () => {
+            console.log(`Image loaded successfully: ${imgPath}`);
+            img.style.display = 'block';
+          };
+          
+          img.onerror = () => {
+            console.error(`Failed to load image: ${imgPath}`);
+            img.style.display = 'none';
+            const placeholder = document.createElement('div');
+            placeholder.className = 'enemy-placeholder';
+            placeholder.textContent = '🐉';
+            visualDiv.appendChild(placeholder);
+          };
+          
+          visualDiv.appendChild(img);
+          
+          const infoDiv = document.createElement('div');
+          infoDiv.className = 'enemy-info';
+          infoDiv.innerHTML = `
+            <h4 class="enemy-name">${opponent.name}</h4>
+            <span class="enemy-element" data-element="${opponent.element}">${opponent.element}</span>
+          `;
+          
+          card.appendChild(visualDiv);
+          card.appendChild(infoDiv);
+          enemyBelt.appendChild(card);
+        });
+        
+        console.log('Total enemy cards created:', enemyBelt.children.length);
+      } else {
+        console.error('enemy-belt element not found!');
+      }
+    }
+
+    // Sound Functions - using Web Audio API for sound effects
+    function playClickSound() {
+      try {
+        if (audioContext.state === 'suspended') {
+          audioContext.resume();
+        }
+        const oscillator = audioContext.createOscillator();
+        const gainNode = audioContext.createGain();
+        
+        oscillator.connect(gainNode);
+        gainNode.connect(audioContext.destination);
+        
+        oscillator.frequency.value = 800;
+        oscillator.type = 'sine';
+        
+        gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
+        gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1);
+        
+        oscillator.start(audioContext.currentTime);
+        oscillator.stop(audioContext.currentTime + 0.1);
+      } catch (error) {
+        console.log('Click sound error:', error);
+      }
+    }
+
+    function playHatchSound() {
+      try {
+        if (audioContext.state === 'suspended') {
+          audioContext.resume();
+        }
+        const oscillator = audioContext.createOscillator();
+        const gainNode = audioContext.createGain();
+        
+        oscillator.connect(gainNode);
+        gainNode.connect(audioContext.destination);
+        
+        oscillator.frequency.setValueAtTime(400, audioContext.currentTime);
+        oscillator.frequency.exponentialRampToValueAtTime(800, audioContext.currentTime + 0.2);
+        oscillator.type = 'sine';
+        
+        gainNode.gain.setValueAtTime(0.2, audioContext.currentTime);
+        gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
+        
+        oscillator.start(audioContext.currentTime);
+        oscillator.stop(audioContext.currentTime + 0.3);
+      } catch (error) {
+        console.log('Hatch sound error:', error);
+      }
+    }
+
+    // Hatchery Logic
+    let selectedEgg = null;
+    const hatchProbabilities = {
+      basic: { Common: 0.60, Uncommon: 0.40, Rare: 0, Epic: 0, Legendary: 0, Mythic: 0 },
+      prime: { Common: 0, Uncommon: 0, Rare: 0.55, Epic: 0.35, Legendary: 0.10, Mythic: 0 },
+      forbidden: { Common: 0, Uncommon: 0, Rare: 0, Epic: 0.30, Legendary: 0.40, Mythic: 0.30 }
+    };
+
+    function selectEgg(eggType) {
+      selectedEgg = eggType;
+      document.getElementById('hatch-btn').disabled = false;
+      
+      const hatchVisual = document.getElementById('hatch-visual');
+      hatchVisual.innerHTML = `<img src="${eggType}-egg.png" class="selected-egg-img" alt="Selected Egg">`;
+      
+      document.querySelectorAll('.egg-card-marketing').forEach(card => {
+        card.classList.remove('selected');
+      });
+      document.querySelector(`[data-egg="${eggType}"]`).classList.add('selected');
+    }
+
+    function hatchEggDirect(eggType) {
+      const overlay = document.getElementById('hatch-overlay');
+      const overlayHatchVisual = document.getElementById('overlay-hatch-visual');
+      
+      // Play click sound
+      playClickSound();
+      
+      // Show overlay
+      overlay.classList.add('active');
+      overlay.classList.remove('can-close');
+      
+      // Set egg visual based on egg type - using game's shatter animation
+      let eggHTML = "";
+      let eggStageId = "";
+      let eggImageClass = "";
+      
+      if (eggType === "basic") {
+        eggStageId = "basicEggStage";
+        eggImageClass = "egg-basic";
+      } else if (eggType === "prime") {
+        eggStageId = "primeEggStage";
+        eggImageClass = "egg-prime";
+      } else if (eggType === "forbidden") {
+        eggStageId = "forbiddenEggStage";
+        eggImageClass = "egg-forbidden";
+      }
+      
+      selectedEgg = eggType;
+      
+      let eggImagePath = '';
+      if (eggType === 'basic') {
+        eggImagePath = 'basic-egg.png';
+      } else if (eggType === 'prime') {
+        eggImagePath = 'prime-egg.png';
+      } else if (eggType === 'forbidden') {
+        eggImagePath = 'forbidden-egg.png';
+      }
+      
+      eggHTML = `
+        <div class="egg-stage ${eggImageClass}" id="${eggStageId}">
+          <img src="${eggImagePath}" class="egg-whole-img" alt="Egg">
+          <svg class="egg-cracks" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M 50 55 L 48 45 L 52 35 L 50 30"/>
+            <path d="M 50 55 L 60 48 L 68 42 L 70 40"/>
+            <path d="M 50 55 L 62 58 L 70 62 L 72 64"/>
+            <path d="M 50 55 L 55 65 L 58 72 L 60 75"/>
+            <path d="M 50 55 L 45 66 L 42 73 L 40 75"/>
+            <path d="M 50 55 L 38 60 L 32 64 L 30 66"/>
+            <path d="M 50 55 L 40 46 L 32 40 L 30 38"/>
+          </svg>
+          <img src="${eggImagePath}" class="egg-frag-img frag-1" alt="Fragment 1">
+          <img src="${eggImagePath}" class="egg-frag-img frag-2" alt="Fragment 2">
+          <img src="${eggImagePath}" class="egg-frag-img frag-3" alt="Fragment 3">
+          <img src="${eggImagePath}" class="egg-frag-img frag-4" alt="Fragment 4">
+          <img src="${eggImagePath}" class="egg-frag-img frag-5" alt="Fragment 5">
+          <img src="${eggImagePath}" class="egg-frag-img frag-6" alt="Fragment 6">
+          <img src="${eggImagePath}" class="egg-frag-img frag-7" alt="Fragment 7">
+        </div>
+      `;
+      
+      overlayHatchVisual.innerHTML = eggHTML;
+      
+      // Block clicks during animation
+      overlay.onclick = (e) => {
+        if (!overlay.classList.contains("can-close")) {
+          e.stopPropagation();
+          e.preventDefault();
+          e.stopImmediatePropagation();
+          return false;
+        }
+      };
+      
+      // Add click handler for manual hatching
+      const eggStage = document.getElementById(eggStageId);
+      if (eggStage) {
+        let clickCount = 0;
+        
+        eggStage.addEventListener('click', () => {
+          clickCount++;
+          
+          if (clickCount === 1) {
+            // First click: start cracking animation
+            eggStage.classList.add("cracking");
+          } else if (clickCount === 2) {
+            // Second click: shatter the egg
+            if (!eggStage.classList.contains("shattering")) {
+              eggStage.classList.remove("cracking");
+              eggStage.classList.add("shattering");
+              playHatchSound();
+              
+              // Reveal results after shatter animation
+              setTimeout(() => {
+                revealMarketingResults(eggType);
+              }, 1500);
+            }
+          }
+        });
+      }
+    }
+    
+    function revealMarketingResults(eggType) {
+      const overlay = document.getElementById('hatch-overlay');
+      const overlayHatchVisual = document.getElementById('overlay-hatch-visual');
+      
+      // Hide the egg element after shattering
+      const eggStage = overlayHatchVisual.querySelector('.egg-stage');
+      if (eggStage) {
+        eggStage.style.opacity = "0";
+        eggStage.style.display = "none";
+      }
+      
+      // Determine rarity based on probabilities
+      const probabilities = hatchProbabilities[eggType];
+      const roll = Math.random();
+      let selectedRarity = "Common";
+      let cumulative = 0;
+
+      for (const [rarity, rate] of Object.entries(probabilities)) {
+        cumulative += rate;
+        if (roll <= cumulative) {
+          selectedRarity = rarity;
+          break;
+        }
+      }
+      
+      // Get slime from pool
+      const SLIME_POOL = {
+        Common: [
+          { name: "Flame Drake", cssClass: "slime-flame-drake", basePower: 100, element: "Fire" },
+          { name: "Green Wyrmling", cssClass: "slime-green-wyrmling", basePower: 90, element: "Earth" }
+        ],
+        Uncommon: [
+          { name: "Ember Lizard", cssClass: "slime-ember-lizard", basePower: 210, element: "Fire" },
+          { name: "Aqua Serpent", cssClass: "slime-aqua-serpent", basePower: 230, element: "Water" }
+        ],
+        Rare: [
+          { name: "Thunder Drake", cssClass: "slime-thunder-drake", basePower: 450, element: "Wind" },
+          { name: "Frost Raptor", cssClass: "slime-frost-raptor", basePower: 420, element: "Water" }
+        ],
+        Epic: [
+          { name: "Shadow Stalker", cssClass: "slime-shadow-stalker", basePower: 950, element: "Dark" },
+          { name: "Solar Phoenix", cssClass: "slime-solar-phoenix", basePower: 1100, element: "Fire" }
+        ],
+        Legendary: [
+          { name: "Golden Wyrm", cssClass: "slime-golden-wyrm", basePower: 3400, element: "Light" },
+          { name: "Void Terror", cssClass: "slime-void-terror", basePower: 3800, element: "Dark" }
+        ],
+        Mythic: [
+          { name: "Cosmic Singularity", cssClass: "slime-cosmic-singularity", basePower: 9500, element: "Dark" },
+          { name: "Chrono Emperor", cssClass: "slime-chrono-emperor", basePower: 12000, element: "Light" }
+        ]
+      };
+      
+      const pool = SLIME_POOL[selectedRarity];
+      const slime = pool[Math.floor(Math.random() * pool.length)];
+      
+      // Show slime result
+      overlayHatchVisual.innerHTML = `
+        <div class="hatch-result">
+          <div class="rarity-banner ${selectedRarity.toLowerCase()}">${selectedRarity.toUpperCase()}</div>
+          <div class="hatch-slime-display">${getSlimeSVG(slime.cssClass, 1)}</div>
+          <div class="slime-name glow-${selectedRarity.toLowerCase()}">${slime.name}</div>
+          <div class="slime-info">
+            <div class="slime-element">Element: ${slime.element}</div>
+            <div class="slime-power">Power: ⚔️ ${slime.basePower}</div>
+          </div>
+        </div>
+      `;
+      
+      // Enable clicking to close after slime reveals
+      overlay.classList.add("can-close");
+      overlay.onclick = (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        closeHatchOverlay();
+      };
+    }
+    
+    function closeHatchOverlay() {
+      const overlay = document.getElementById('hatch-overlay');
+      overlay.classList.remove('active');
+      overlay.classList.remove('can-close');
+      overlay.onclick = null;
+    }
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', () => {
+      populateSlimeShowcase();
+      populateBossGallery();
+      
+      // Close overlay button
+      document.getElementById('close-hatch-overlay').addEventListener('click', closeHatchOverlay);
+    });
+  </script>
+</body>
+</html>
